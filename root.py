@@ -1,6 +1,7 @@
 import tkinter as tk
 from helper import *
 from grid_window import *
+from tkinter import messagebox
 # from tkcalendar import Calendar
 
 
@@ -107,7 +108,15 @@ def make_window():
             # print(var.get())
             if var.get() == True:
                 selectedYears.append(item)
-        yearList = get_list(cleanData, selectedYears)
+        try:
+            yearList = get_list(cleanData, selectedYears)
+            if len(yearList) == 0:
+                raise ValueError("Please select at least one year")
+        except ValueError as e:
+            messagebox.showerror("Error", e)
+            return
+        
+
         totalInsights = get_insights(yearList)
         # print(totalInsights)
         heartVal = totalInsights[0]
