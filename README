@@ -1,1 +1,10 @@
-Test
+This program is used to gather insights from data derived from google fitness. When provided with the 
+proper folders with json files provided, the program will present the data and draw more spicific insights.
+
+Instructions:
+
+1. Download the .exe provided in the repo
+2. Place the .exe in the same directory as the Google Fittnes folders
+    - These folders must have unchanged names from google fitness. (Specifically, the 'All Sessions' folder must remain the same name)
+3. Run the .exe 
+4. Once it loads, select the years and click the button provided.

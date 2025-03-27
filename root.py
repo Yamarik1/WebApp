@@ -1,11 +1,7 @@
 import tkinter as tk
 from helper import *
-from resluts_page import *
 from grid_window import *
 # from tkcalendar import Calendar
-
-
-
 
 
 def make_window():
@@ -47,103 +43,6 @@ def make_window():
     item.add_command(label='New')
     menu.add_cascade(label='File', menu=item)
     root.config(menu=menu)
-
-    # #adding a label to the root window
-    # lbl = Label(root, text = "Enter the start date(mm - dd - yyyy):")
-    # startText = "Enter the start date(mm, dd, yyyy):"
-    # # lbl.grid()
-
-    # startYear = Entry(root, width = 10)
-    # # startYear.grid(column=2, row=1,sticky='w', padx =0)
-
-    # lblFrame1 = Frame(root)
-    # entryFrame1 = Frame(root)
-    # lblFrame2 = Frame(root)
-    # entryFrame2 = Frame(root)
-    # btnFrame = Frame(root)
-    # failTextFrame = Frame(root)
-    
-
-    # lblFrame1.pack(side="top", fill='x')
-    # entryFrame1.pack(side="top", fill='x')
-    # lblFrame2.pack(side="top", fill='x')
-    # entryFrame2.pack(side="top", fill ='x')
-    # btnFrame.pack(side="top", fill='x')
-    # failTextFrame.pack(side="top", fill='x')
-    #             #   expand=True)
-
-    # int_lbl1 = Label(lblFrame1, text=startText)
-    # int_lbl1.pack(side="left")
-
-    # startMonth = Entry(entryFrame1, width=10)
-    # startMonth.pack(side="left", padx = 5)
-
-    # hyphon = Label(entryFrame1,text = '-')
-    # hyphon.pack(side="left")
-
-    # startDay = Entry(entryFrame1, width = 10)
-    # startDay.pack(side="left", padx = 5)
-
-    # hyphon = Label(entryFrame1,text = '-')
-    # hyphon.pack(side="left")
-
-    # startYear = Entry(entryFrame1, width = 10)
-    # startYear.pack(side="left", padx = 5)
-
-    # int_lbl2 = Label(lblFrame2, text="Enter the end date(mm - dd - yyyy):")
-    # int_lbl2.pack(side="left")
-
-    # endMonth = Entry(entryFrame2, width=10)
-    # endMonth.pack(side="left", padx = 5)
-
-    # hyphon = Label(entryFrame2,text = '-')
-    # hyphon.pack(side="left")
-
-    # endDay = Entry(entryFrame2, width = 10)
-    # endDay.pack(side="left", padx = 5)
-
-    # hyphon = Label(entryFrame2,text = '-')
-    # hyphon.pack(side="left")
-
-    # endYear = Entry(entryFrame2, width = 10)
-    # endYear.pack(side="left", padx = 5)
-
-    # failText = "Please enter actual dates."
-
-    # invalid = Label(failTextFrame, text=failText)
-    # invalid.pack(side="left")
-    # invalid.pack_forget()
-    # def clicked():
-
-    #     start = [startMonth.get().strip(), startDay.get().strip(), startYear.get().strip()]
-    #     end = [endMonth.get().strip(), endDay.get().strip(), endYear.get().strip()]
-
-
-    #     # If both inputs are valid dates, then move on.
-    #     valid = parse_input(start, end)
-
-    #     if valid == False:
-    #         invalid.pack()
-    #         # failText = "Please enter actual dates."
-    #         # failTextFrame = Frame(root)
-    #         # failTextFrame.pack(side="top", fill='x')
-
-    #         # invalid = Label(failTextFrame, text=failText)
-    #         # invalid.pack(side="left")
-    #         # print(invalid.get())
-    #         # pass
-            
-    #     else:
-    #         print("True")
-
-    #     startDate = startMonth.get().strip() + "-" + startDay.get().strip() + "-" + startYear.get().strip()
-    #     endDate = endMonth.get().strip() + "-" + endDay.get().strip() + "-" + endYear.get().strip()
-
-        # res = endDate + " / " + startDate
-        # int_lbl1.configure(text=res)
-
-    # btn = Button(btnFrame, text = "Click", fg = "red", command=clicked)
-
     
     # btn.pack(side="left")
     topFrame = Frame(root,borderwidth=2, relief="solid", width=500, height=100, highlightbackground="black", highlightthickness=1)
